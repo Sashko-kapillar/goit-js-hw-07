@@ -31,6 +31,13 @@ p {
   margin: 0;
   display: flex;
   padding: 24px;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 p a {
@@ -85,6 +92,15 @@ p a:hover {
   column-gap: 24px;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 100px 156px;
   margin: 0;
+}
+
+.gallery li {
+  width: calc((100% - 48px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.18),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.18);
+}
+
+.gallery li img {
 }

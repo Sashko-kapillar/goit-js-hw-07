@@ -26,20 +26,17 @@ const images = [
     alt: "Lighthouse Coast Sea",
   },
 ];
+const galleryEl = document.querySelector(".gallery");
+console.log(galleryEl);
 
-const listGallery = document.querySelector(".gallery");
-
-console.log(listGallery);
 const imgMarkup = (transaction) => {
-  return;
-  `<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
-<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
-<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
-<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
-<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
-<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>`;
-
-  console.log(imgMarkup);
+  return `<li><img src="${transaction.url}" alt="${transaction.alt}" width="360"></li>`;
 };
 
-listEl.insertAdjacentHTML("beferebegin");
+const setImgMarkup = (images) => {
+  return images.map(imgMarkup).join("");
+};
+
+galleryEl.style.listStyleType = "none";
+console.log(setImgMarkup(images));
+galleryEl.insertAdjacentHTML("beforeend", setImgMarkup(images));
