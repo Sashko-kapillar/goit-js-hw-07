@@ -30,6 +30,7 @@ h2 {
 p {
   margin: 0;
   display: flex;
+  padding: 24px;
 }
 
 p a {
