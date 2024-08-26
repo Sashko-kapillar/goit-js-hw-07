@@ -76,6 +76,15 @@ p a:hover {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* color: #2e2f42; */
   padding: 8px 16px;
+}
+
+.gallery {
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  margin: 0;
 }

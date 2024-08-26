@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const images = [
   {
@@ -24,5 +24,22 @@ const images = [
   {
     url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     alt: "Lighthouse Coast Sea",
-  }
+  },
 ];
+
+const listGallery = document.querySelector(".gallery");
+
+console.log(listGallery);
+const imgMarkup = (transaction) => {
+  return;
+  `<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
+<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
+<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
+<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
+<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>
+<li><img src="" alt="">${transaction.url} ${transaction.alt}</li>`;
+
+  console.log(imgMarkup);
+};
+
+listEl.insertAdjacentHTML("beferebegin");
