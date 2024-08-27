@@ -1,9 +1,10 @@
-"use strict";
-// function updateGreeting() {
+const input = document.getElementById("name-input");
+const output = document.getElementById("name-output");
 
-// }
-const textInput = document.querySelector("#name-input");
-const textOutput = document.querySelector("#name-output");
-textInput.addEventListener("input", (event) => {
-  textOutput.textContent = event.currentTarget.value;
+input.addEventListener("input", () => {
+  // Очищаємо пробіли на початку і кінці рядка
+  const name = input.value.trim();
+
+  // Перевіряємо, чи рядок не пустий
+  output.textContent = name ? `${name}!` : " Anonymous!";
 });
