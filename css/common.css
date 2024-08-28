@@ -178,6 +178,10 @@ label input {
   margin-top: 8px;
 }
 
+label input {
+  border: 1px solid #202020;
+}
+
 button {
   margin-top: 16px;
 }
