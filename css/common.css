@@ -24,7 +24,10 @@ ol {
 h1,
 h2,
 p,
-li {
+li,
+label,
+button,
+form {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   color: #2e2f42;
@@ -40,8 +43,13 @@ h2 {
 
 p {
   display: flex;
-  padding: 24px;
+  margin: 24px 0;
   justify-content: center;
+  min-width: 100px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 a {
@@ -54,6 +62,17 @@ img {
   height: auto;
 }
 
+input {
+  padding-left: 12px;
+}
+
+/* button {
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #4e75ff;
+} */
+
+button,
 p a {
   background-color: #4e75ff;
   padding: 8px 16px;
@@ -65,7 +84,7 @@ p a {
   border-radius: 8px;
   border: none;
 }
-
+button:hover,
 p a:hover {
   background-color: #6c8cff;
 }
@@ -108,7 +127,7 @@ p a:hover {
   column-gap: 24px;
   align-items: center;
   justify-content: center;
-  padding: 100px;
+  padding: 92px;
   margin: 0;
 }
 
@@ -131,7 +150,6 @@ p a:hover {
   width: 360px;
   height: 40px;
   border-radius: 8px;
-  padding-left: 12px;
   border: 1px solid #b0b0b0;
   font-weight: 400;
   font-size: 16px;
@@ -139,11 +157,43 @@ p a:hover {
   margin-bottom: 16px;
 }
 
-#name-input:focus,
+/* #name-input:focus, */
 #name-input:hover {
   border: 1px solid #000;
 }
 
-#name-input:not(:placeholder-shown) {
+/* ===   Task-4   === */
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+label:first-child {
+  margin-bottom: 8px;
+}
+
+label input {
+  padding: 12px;
   border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+/* ===   Task-5   === */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 408px;
+  padding: 100px 88px;
+  background: #fff;
+  border: 1px solid #b0b0b0;
+  border-radius: 8px;
 }

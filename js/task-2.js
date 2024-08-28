@@ -27,6 +27,7 @@ const images = [
   },
 ];
 const galleryEl = document.querySelector(".gallery");
+galleryEl.style.listStyleType = "none";
 console.log(galleryEl);
 
 const imgMarkup = (transaction) => {
@@ -37,6 +38,5 @@ const setImgMarkup = (images) => {
   return images.map(imgMarkup).join("");
 };
 
-galleryEl.style.listStyleType = "none";
 console.log(setImgMarkup(images));
 galleryEl.insertAdjacentHTML("beforeend", setImgMarkup(images));
