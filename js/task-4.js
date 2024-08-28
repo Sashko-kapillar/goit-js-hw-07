@@ -4,6 +4,7 @@ loginForm.style.backgroundColor = "#fff";
 loginForm.style.padding = "24px";
 loginForm.style.borderRadius = "8px";
 loginForm.style.border = "1px solid #cecece";
+loginForm.style.margin = "0 auto";
 
 loginForm.addEventListener("submit", (event) => {
   event.preventDefault(); // Запобігаємо перезавантаженню сторінки

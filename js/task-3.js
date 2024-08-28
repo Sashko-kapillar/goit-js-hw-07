@@ -11,6 +11,7 @@ newDiv.style.padding = "24px";
 newDiv.style.borderRadius = "8px";
 newDiv.style.backgroundColor = "#fff";
 newDiv.style.border = "1px solid #cecece";
+newDiv.style.margin = "0 auto";
 
 //Розмістити нового елементу div перед елементом input
 input.parentNode.insertBefore(newDiv, input);

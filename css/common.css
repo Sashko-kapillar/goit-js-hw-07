@@ -45,7 +45,6 @@ p {
   display: flex;
   margin: 24px 0;
   justify-content: center;
-  min-width: 100px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -66,11 +65,9 @@ input {
   padding-left: 12px;
 }
 
-/* button {
-  padding: 8px 16px;
-  color: #fff;
-  background-color: #4e75ff;
-} */
+button {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
 
 button,
 p a {
@@ -83,7 +80,9 @@ p a {
   color: #fff;
   border-radius: 8px;
   border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+
 button:hover,
 p a:hover {
   background-color: #6c8cff;
@@ -157,7 +156,6 @@ p a:hover {
   margin-bottom: 16px;
 }
 
-/* #name-input:focus, */
 #name-input:hover {
   border: 1px solid #000;
 }
@@ -196,4 +194,50 @@ button {
   background: #fff;
   border: 1px solid #b0b0b0;
   border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* ===   Task-6   === */
+
+#controls {
+  margin-bottom: 16px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 44px;
+}
+
+#controls,
+#boxes {
+  display: flex;
+  justify-content: start;
+  border-radius: 8px;
+  width: 486px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  /* transform: translate(-50%, -50%); */
+}
+
+#controls button {
+  margin: 0;
+  width: 120px;
+}
+
+#controls button:last-child {
+  background-color: #ff4e4e;
+}
+
+#controls button:last-child:hover {
+  background-color: #ff7070;
+}
+
+#controls input {
+  padding: 8px 32px;
+  width: 150px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+}
+
+#boxes {
+  gap: 20px 43px;
+  flex-wrap: wrap;
 }
