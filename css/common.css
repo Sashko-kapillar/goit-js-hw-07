@@ -178,7 +178,7 @@ label input {
   margin-top: 8px;
 }
 
-label input {
+label input:hover {
   border: 1px solid #202020;
 }
 
