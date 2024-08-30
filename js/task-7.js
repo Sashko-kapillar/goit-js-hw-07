@@ -14,7 +14,7 @@ function selectColor(event) {
   output.style.color = selectedColor;
 }
 
-// Some helper functions to render palette items
+// Some helper functions to render in palette items
 createPaletteItems();
 
 function createPaletteItems() {
