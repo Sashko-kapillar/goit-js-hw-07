@@ -68,33 +68,27 @@ const images = [
 
 const galleryElem = document.querySelector(".gallery");
 galleryElem.style.listStyleType = "none";
-galleryElem.style.flexWrap = "wrap";
-galleryElem.style.gap = "20px 24px";
-console.log(galleryElem);
 
 // Деструктурізація
 for (const img of images) {
   const { preview, original, description } = img;
 
-  // створення елемента <li>
-  const itemEl = document.createElement("li");
-  itemEl.classList = "gallery-item";
-  itemEl.style.width = "calc((100% - 48px) / 3)";
-  itemEl.style.boxShadow =
-    "0px 1px 6px rgba(46, 47, 66, 0.18), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.18)";
-
   // створення елемента <img>
   const imgEl = document.createElement("img");
   imgEl.classList = "gallery-image";
+  imgEl.width = "360";
   imgEl.src = `${preview}`;
   imgEl.alt = `${description}`;
-  imgEl.width = "360";
   imgEl.dataset.source = original;
 
   // створення елемента <a>
   const linkEl = document.createElement("a");
   linkEl.classList = "gallery-link";
   linkEl.href = `${original}`;
+
+  // створення елемента <li>
+  const itemEl = document.createElement("li");
+  itemEl.classList = "gallery-item";
 
   // вкладення елементів (перший той у який вкладаємо, тоді той що вкладаємо)
   linkEl.appendChild(imgEl);

@@ -88,7 +88,6 @@ button {
 
 .gallery-image {
   object-fit: cover;
-  /* max-width: 360px; */
 }
 
 .gallery-image:hover {
