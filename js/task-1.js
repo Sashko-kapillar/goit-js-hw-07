@@ -66,11 +66,11 @@ const images = [
   },
 ];
 
-const galleryEl = document.querySelector(".gallery");
-galleryEl.style.listStyleType = "none";
-galleryEl.style.flexWrap = "wrap";
-galleryEl.style.gap = "20px 24px";
-console.log(galleryEl);
+const galleryElem = document.querySelector(".gallery");
+galleryElem.style.listStyleType = "none";
+galleryElem.style.flexWrap = "wrap";
+galleryElem.style.gap = "20px 24px";
+console.log(galleryElem);
 
 // Деструктурізація
 for (const img of images) {
@@ -99,10 +99,10 @@ for (const img of images) {
   // вкладення елементів (перший той у який вкладаємо, тоді той що вкладаємо)
   linkEl.appendChild(imgEl);
   itemEl.appendChild(linkEl);
-  galleryEl.appendChild(itemEl);
+  galleryElem.appendChild(itemEl);
 }
 
-galleryEl.addEventListener("click", (event) => {
+galleryElem.addEventListener("click", (event) => {
   // заборона стандартної поведінки браузера(завантаження зображення на ПК)
   event.preventDefault();
 
