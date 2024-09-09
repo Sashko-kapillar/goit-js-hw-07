@@ -69,21 +69,25 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.gallery {
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
+/* =====   gallery   ====== */
 
-.gallery-item {
-  width: calc((100% - 48px) / 3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 360px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.18),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.18);
+@media screen and (min-width: 1200px) {
+  .gallery {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .gallery-item {
+    width: calc((100% - 48px) / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 360px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.18),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.18);
+  }
 }
 
 .gallery-image {
